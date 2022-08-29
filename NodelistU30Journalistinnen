@@ -1,4 +1,26 @@
-id,name,company,location,position,volontariat,education1,education2,price1,price2,engagement,migration
-SuHo,SusanneHöb,2015,WeltN24,Video-Redakteurin,
-u30,DieTop30bis30desJahres,Mediummagazin,
-DJS,DeutscheJournalistenschule,,München
+id,name,company,location,position,volontariat,education1,education2,engagement,migration 
+SuHo,SusanneHöb,2015(Falsch),WeltN24,Video-Redakteurin,-> Liste falsch ab 3.Spalte, siehe Kategorien oben
+u30,DieTop30bis30desJahres,Mediummagazin (Steht hier als Company, stimmt das?)
+DJS,DeutscheJournalistenschule,,München,,,,,,,,(Kommas nicht vergessen! Auch in den Zeilen drüber hinzufügen)
+
+
+Beispiel Pris:
+id,name,company,location,position,migration
+SuHo,SusanneHöb,WeltN24,München,Video-Redakteurin,nein
+u30,DieTop30bis30desJahres,Mediummagazin,München,,
+DJS,DeutscheJournalistenschule,,München,,
+SA,SaveAfrica,,Johannesburg,,
+DEP,DiarioElPais,,Madrid,,
+JP,JournalistinDesJahres,ZDF,Berlin,,
+JM,JournalistDesMonats,Spiegel,Hamburg,,
+
+edgetypes:nominierung,education,preis,voluntariat,engagement,(employment....)
+
+edgelist
+from,to,type,year
+SuHo,u30,nominierung,2015
+SuHo,DJS,education,2011
+SuHo,SA,engagement,2010
+SuHo,DEP,voluntariat,2012
+SuHo,JP,preis,2016
+SuHo,JM,preis,2018
